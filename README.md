@@ -1,9 +1,9 @@
 # Fortigate Basic Setup
-![Imgur](https://imgur.com/K33rli9)
+![Imgur](https://imgur.com/K33rli9.jpg)
 
 ## Step 1: Connections
 
-![Imgur](https://imgur.com/DiHQAIn)
+![Imgur](https://imgur.com/DiHQAIn.jpg)
 1. Connect your computer to the FortiGate’s LAN port 1 via an Ethernet cable.
 2. Connect the WAN port of the FortiGate to the ISP modem.
 3. Open a web browser and enter the default IP address of the FortiGate (`https://192.168.1.99`).
@@ -17,7 +17,7 @@
 
 ### A. Configure WAN Interface
 
-![Imgur](https://imgur.com/DygodHf)
+![Imgur](https://imgur.com/DygodHf.jpg)
 
 1. Go to `Network` > `Interfaces` and select the WAN interface (WAN 1 or 2) under Physical.
 2. Set **Role** as WAN and **Addressing mode** to either `Manual` or `DHCP`. Most home networks use DHCP unless a static IP is purchased from the ISP.
@@ -28,8 +28,8 @@
 
 ### B. Configure the LAN Interface
 
-![Imgur](https://imgur.com/yG9SWb9)
-![Imgur](https://imgur.com/xhHDwFz)
+![Imgur](https://imgur.com/yG9SWb9.jpg)
+![Imgur](https://imgur.com/xhHDwFz.jpg)
 
 1. Set **Role** to LAN.
 2. Enable **DHCP Server** and use Manual mode to set the IP address and subnet mask for the LAN interface (e.g., `192.168.1.1/24`).
@@ -48,7 +48,7 @@
 
 To allow internal devices to access the internet and vice versa for external users, set up NAT policies to translate private IP addresses from LAN to public IP addresses for outbound traffic and vice versa for inbound traffic. Ensure your router is in Access Point (AP) mode, Bridge mode, or has DHCP disabled to avoid Fortigate and the router performing NAT simultaneously(Double NAT).
 
-![imgur](https://imgur.com/vhybhn0)
+![imgur](https://imgur.com/vhybhn0.jpg)
 
 1. Navigate to `Policy & Objects` > `IPv4 Policy`.
 2. Click `Create New` and name it (e.g., Outbound NAT).
